@@ -1,5 +1,5 @@
-TARGETS = test  # コンパイルしたいプログラム名
-SRCS = imgOpen.cpp
+TARGETS = imgSplit  # コンパイルしたいプログラム名
+SRCS = imgPlaneSplit.cpp
 CC = g++ # 使うコンパイラ
 LIB = 
 CFLAGS = -Wall -O2 -std=c++11 # c++11のオプション追加(3to4)

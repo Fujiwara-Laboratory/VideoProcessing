@@ -21,8 +21,8 @@ int main(int argc, char *argv[]){
 		cv::cvtColor(frame, grayM, cv::COLOR_BGR2GRAY);
 		
 		cv::threshold(grayM, binM, 0, 255, cv::THRESH_BINARY|cv::THRESH_OTSU);
-		cv::GaussianBlur(srcM, blurM, cv::Size(11, 11), 10, 10);
-		cv::Canny(grayM, cannyM, 50, 200);
+		cv::GaussianBlur(srcM, blurM, cv::Size(51, 51), 10, 10);
+		cv::Canny(grayM, cannyM, 5, 30);
 		
 		cv::imshow("result binary", binM);
 		cv::imshow("result blur", blurM);

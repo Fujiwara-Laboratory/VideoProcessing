@@ -12,6 +12,7 @@ int main(int argc, char **argv){
 	cv::imshow("b", rgbPlanes[0]);
 	cv::imshow("g", rgbPlanes[1]);
 	cv::imshow("r", rgbPlanes[2]);
+	cv::imwrite("test.jpg", rgbPlanes[2]);
 	
 	cv::waitKey(0);
 	

@@ -23,13 +23,12 @@ int main(int argc, char *argv[]){
 		if(key == 'q' || key == 27){
 			break;
 		}else if(key == 's'){
-			sprintf(saveFileName, "%03d.jpg", imageNum);
+			sprintf(saveFileName, "hoge%03d_cap.jpg", imageNum);
 			cv::imwrite(saveFileName, frame);
 			imageNum++;
 		}
 	}
 	
-	cv::destroyAllWindows();
 	cap.release();
 	return 0;
 }
